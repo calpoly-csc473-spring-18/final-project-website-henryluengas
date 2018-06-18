@@ -1,0 +1,140 @@
+/* Google Font
+ 'Signika' - 300, 600
+*/
+@import url('https://fonts.googleapis.com/css?family=Signika:300,600');
+
+/*colors
+dark purple rgba(60,16,102,1)
+medium purple rgba(99, 26, 168,1)
+lavender rgba(179, 139, 242,1)
+dark blue rgba(20, 58, 110, 1)
+medium blue rgba(28,79,150,1)
+
+*/
+
+
+body{
+   font-family: "Signika", Helvetica, sans-serif;
+
+}
+main{
+   margin:0px auto;
+   max-width: 1400px;
+   width:100%;
+   min-width: 440px;
+}
+
+section{
+   margin: 0px auto;
+   padding:10px;
+   float:left;
+   color: rgba(20, 58, 110, 1);
+}
+
+/* header */
+header{
+   margin:0px auto;
+   max-width: 1400px;
+   min-width: 440px;
+   min-height: 75px;
+   color:white;
+   background-color: rgba(60,16,102,1);
+
+}
+h1{
+   margin:0px;
+   padding: 10px;
+   font-weight: 600;
+   line-height: 170%;
+}
+h1 span{
+   float:right;
+   font-weight: 300;
+   font-size: 80%;
+   line-height: 100%;
+}
+h1 a{
+   text-decoration: none;
+   color:white;
+   font-size: 70%;
+}
+
+/* headings  */
+h4{/* section headings */
+   line-height: 0%;
+   margin:0px;
+   padding: 20px 0px;
+   font-size: 160%;
+   color: rgba(60,16,102,1);
+}
+h5{
+   line-height: 0%;
+   margin:0px;
+   padding: 10px 0px 0px 0px;
+   font-size: 130%;
+   color: rgba(99, 26, 168,1);
+}
+h6{
+   line-height: 0%;
+   margin: 30px 0px 0px 0px;
+   padding:0px;
+   font-size: 100%;
+   color: rgba(60,16,102,1);
+}
+
+/* final feature, general */
+#finalFeature{
+   min-width: 90%;
+}
+#finalFeature p{
+    padding-bottom:0px;
+
+}
+#finalFeature a{
+   text-decoration: none;
+}
+#finalFeature a:visited{
+   text-decoration: none;
+   color:rgba(28,79,150,1);
+}
+section a{
+   text-decoration: none;
+}
+#finalFeature a:visited{
+   text-decoration: none;
+   color:rgba(28,79,150,1);
+}
+#finalFeature iframe{
+   max-width: 1000px;
+   width:100%;
+   min-height:800px;
+}
+
+#fifty{
+   max-width: 1000px;
+   width:100%;
+}
+/* results */
+#results{
+   min-width: 100%;
+}
+#results figure{
+   padding:10px;
+   margin:0px;
+   min-width: 90%;
+   float:left;
+}
+#results figcaption{
+   color: rgba(99, 26, 168,1);
+   font-weight: 600;
+   text-indent: 20px;
+}
+#results img{
+   min-width: 440px;
+   width:100%;
+   max-width: 2000px;
+}
+#results a{
+   text-decoration: none;
+   color:rgba(99, 26, 168,1);
+}

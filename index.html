@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>CSC 473</title>
+   <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+      <h1>CSC 473<span>Henry Luengas<br><a href="mailto:hluengas@calpoly.edu">hluengas@calpoly.edu</a></span></h1>
+   </header>
+   <main>
+       <section id="finalFeature">
+           <h4>Advanced Rendering</h4>
+
+           <h5>Quarter Project: Raytracer with Video Frame Rendering System and Rudimentary Physics</h5>
+           <br>
+
+           <p>Throughout the quarter we have been building a raytracer to render static scenes described by povray files. For my final project I altered my raytracer to take any spheres and boxes described in the scene and give them a random horizontal speed while also applying gravity frame by frame and accounting for collisions with the floor and a 20 by 20 bounding box around the origin.</p><p>
+           </p>
+           <figure>
+               <img src="images/image1.png" alt="Static image" id="fifty">
+           </figure>
+           <figure>
+               <iframe src="https://drive.google.com/file/d/1RawVUKKzgqDK66udD-vkowfJvN0tgNx-/preview" width="640" max-width="2000px" height="480"></iframe>
+           </figure>
+           <ul>
+               <li>Ray Tracer Features:</li>
+               <ul>
+                   <li>Parses a subset of the povray spec and renders:</li>
+                   <ul>
+                       <li>Point Lights</li>
+                       <li>Planes</li>
+                       <li>Spheres</li>
+                       <li>Triangles</li>
+                       <li>Boxes</li>
+                   </ul>
+                   <li>Handles Object Transformations</li>
+                   <li>Shadows</li>
+                   <li>Local BDRF Lighting/Shading</li>
+                   <li>Recursive Raycast for Reflection and Refraction</li>
+                   <li>Fresnel Effect</li>
+                   <li>Beer's Law</li>
+                   <li>Variable Super Sampling AntiAliasing</li>
+                   <li>Spacial Data Structures (not working)</li>
+                   <li>Global Illumination based on Monte Carlo Ray Tracing</li>
+                   <li>Multithreaded Rendering</li>
+                   <li>Rudimentary Physics Engine (using transforms)</li>
+                   <li>Video Frame Generation System</li>
+
+
+
+</section>
+
+       
+       <section id="results">
+           <p>
+               In order to make the renderer more time efficient for generating videos, I implemented a basic multithreading system to render each pixel of the image plane on a separate thread.
+           </p>
+           <p>This brought the render time down from 74 seconds on 1 thread (10% utilization), to 4 seconds on 16 threads (99% utilization).</p>
+           <figure>
+               <figcaption>1 Thread</figcaption>
+               <img src="images/figure1.png">
+           </figure>
+           <figure>
+               <figcaption>4 Thread</figcaption>
+               <img src="images/figure2.png">
+           </figure>
+           <figure>
+               <figcaption>16 Thread</figcaption>
+               <img src="images/figure3.png">
+           </figure>
+       </section>
+   </main>
+</body>
+</html>
